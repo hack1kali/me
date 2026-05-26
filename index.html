@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DeenFlow | Under Construction</title>
+    <style>
+        :root {
+            --bg-color: #0a0a0a;
+            --primary-color: #00ff66;
+            --text-color: #ffffff;
+            --muted-color: #888888;
+        }
+
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            font-family: 'Courier New', Courier, monospace;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            overflow: hidden;
+            position: relative;
+        }
+
+        /* خلفية الـ Grid السيبرانية */
+        body::before {
+            content: "";
+            position: absolute;
+            width: 200%;
+            height: 200%;
+            top: -50%;
+            left: -50%;
+            background-image: 
+                linear-gradient(rgba(0, 255, 102, 0.03) 1px, transparent 1px),
+                linear-gradient(90deg, rgba(0, 255, 102, 0.03) 1px, transparent 1px);
+            background-size: 30px 30px;
+            transform: rotate(5deg);
+            z-index: 1;
+        }
+
+        .container {
+            text-align: center;
+            z-index: 2;
+            padding: 20px;
+            border: 1px solid rgba(0, 255, 102, 0.2);
+            background: rgba(10, 10, 10, 0.85);
+            border-radius: 8px;
+            box-shadow: 0 0 20px rgba(0, 255, 102, 0.05);
+            max-width: 500px;
+            width: 90%;
+        }
+
+        .terminal-header {
+            display: flex;
+            gap: 8px;
+            border-bottom: 1px solid rgba(0, 255, 102, 0.2);
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+        }
+
+        .circle {
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+        }
+        .red { background-color: #ff5f56; }
+        .yellow { background-color: #ffbd2e; }
+        .green { background-color: #27c93f; }
+
+        h1 {
+            color: var(--primary-color);
+            font-size: 2rem;
+            margin: 0 0 10px 0;
+            letter-spacing: 2px;
+            text-shadow: 0 0 10px rgba(0, 255, 102, 0.5);
+        }
+
+        p {
+            font-size: 1.1rem;
+            color: var(--text-color);
+            margin-bottom: 5px;
+        }
+
+        .status {
+            color: var(--muted-color);
+            font-size: 0.9rem;
+            margin-bottom: 25px;
+        }
+
+        /* الإيموجي المتحرك */
+        .hacker-emoji {
+            font-size: 4rem;
+            display: inline-block;
+            margin-top: 15px;
+            animation: float 2.5s ease-in-out infinite;
+            filter: drop-shadow(0 0 10px rgba(0, 255, 102, 0.3));
+        }
+
+        @keyframes float {
+            0% { transform: translateY(0px) rotate(0deg); }
+            50% { transform: translateY(-15px) rotate(3deg); }
+            100% { transform: translateY(0px) rotate(0deg); }
+        }
+
+        .line {
+            width: 100%;
+            height: 2px;
+            background: linear-gradient(90deg, transparent, var(--primary-color), transparent);
+            margin: 20px 0;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="terminal-header">
+            <div class="circle red"></div>
+            <div class="circle yellow"></div>
+            <div class="circle green"></div>
+        </div>
+        
+        <h1>[ DEENFLOW ]</h1>
+        <p>الموقع تحت الإنشاء والتطوير...</p>
+        <div class="status">Status: SECURING_SYSTEMS_AND_LOGIC...</div>
+        
+        <div class="line"></div>
+        
+        <div class="hacker-emoji">👨‍💻</div>
+    </div>
+
+</body>
+</html>
